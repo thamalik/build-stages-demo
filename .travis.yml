@@ -14,7 +14,7 @@ jobs:
         api_key: $HEROKU_AUTH_TOKEN
         on: sf-stages-demo
     - stage: test staging
-      script: 'curl http://sf-stages-staging.herokuapp.com'
+      script: 'crl http://sf-stages-staging.herokuapp.com'
     - stage: deploy to production
       script: /bin/true
       deploy:
